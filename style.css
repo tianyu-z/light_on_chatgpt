@@ -1,0 +1,25 @@
+/* Target the main container of the code block */
+.bg-black.rounded-md {
+    background-color: white !important;
+    /* Change the background color to white */
+}
+
+/* Target all text within the code block */
+.bg-black.rounded-md * {
+    color: black !important;
+    /* Change all text color to black for visibility */
+}
+
+/* Target the header part of the code block */
+.flex.items-center.relative.text-gray-200.bg-gray-800.dark\:bg-token-surface-primary.px-4.py-2.text-xs.font-sans.justify-between.rounded-t-md {
+    background-color: #f0f0f0 !important;
+    /* Light background for the header */
+    color: black !important;
+    /* Dark text color for contrast */
+}
+
+.text-base {
+    max-width: 80% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}

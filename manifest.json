@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "ChatGPT Code Block Color and Width Changer",
+    "version": "1.0",
+    "description": "Change the background of code blocks to white for better readability on e-ink monitors.",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://chat.openai.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "style.css"
+            ]
+        }
+    ]
+}
