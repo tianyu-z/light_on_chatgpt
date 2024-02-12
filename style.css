@@ -1,25 +1,51 @@
-/* Target the main container of the code block */
-.bg-black.rounded-md {
+/* Ensure this is the most accurate and specific path to the code block container */
+.bg-black.rounded-md,
+.dark.bg-gray-950.rounded-md {
     background-color: white !important;
-    /* Change the background color to white */
 }
 
-/* Target all text within the code block */
-.bg-black.rounded-md * {
+/* Increase specificity by accurately targeting the text within, considering dynamic classes */
+.bg-black.rounded-md *,
+.dark.bg-gray-950.rounded-md * {
     color: black !important;
-    /* Change all text color to black for visibility */
 }
 
-/* Target the header part of the code block */
-.flex.items-center.relative.text-gray-200.bg-gray-800.dark\:bg-token-surface-primary.px-4.py-2.text-xs.font-sans.justify-between.rounded-t-md {
+/* If the header has a complex class string, ensure accuracy and specificity */
+.flex.items-center.relative.text-gray-200.bg-gray-800.dark\\:bg-token-main-surface-secondary.px-4.py-2.text-xs.font-sans.justify-between.rounded-t-md {
     background-color: #f0f0f0 !important;
-    /* Light background for the header */
     color: black !important;
-    /* Dark text color for contrast */
 }
 
-.text-base {
-    max-width: 80% !important;
+/* Adjustments for text base, ensuring specificity */
+.bg-black.rounded-md .text-base,
+.dark.bg-gray-950.rounded-md .text-base {
+    max-width: 85% !important;
     padding-left: 20px !important;
     padding-right: 20px !important;
+}
+
+/* Target the container of the code block to change its background to white */
+.bg-gray-950.rounded-md,
+.dark.bg-gray-950.rounded-md {
+    background-color: white !important;
+}
+
+/* Target the text within the code block to change its color to black */
+.bg-gray-950.rounded-md *,
+.dark.bg-gray-950.rounded-md * {
+    color: black !important;
+}
+
+/* Target the bar showing the language type and the copy button to change background to white and text to black */
+.flex.items-center.relative.bg-token-main-surface-secondary.px-4.py-2.text-xs.font-sans.justify-between.rounded-t-md {
+    background-color: white !important;
+    /* Change the background color to white */
+    color: black !important;
+    /* Change the text color to black */
+}
+
+/* Ensure the SVG icon (copy button) color is changed to black for visibility */
+.flex.items-center.relative.bg-token-main-surface-secondary.px-4.py-2.text-xs.font-sans.justify-between.rounded-t-md svg {
+    fill: black !important;
+    /* Change SVG fill color to black */
 }
